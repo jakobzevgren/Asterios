@@ -1,0 +1,104 @@
+/**
+ * Main stylesheet @import url(links.css);
+ */
+
+/**
+ * General elements
+ */
+body {
+  color: #333;
+  font-family: arial, sans-serif;
+}
+
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+}
+
+
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.sitetitle {
+  position: absolute;
+  top: 6px;
+  left: 130px;
+  font-size: 48px;
+}
+
+.siteslogan {
+  position: absolute;
+  top: 65px;
+  left: 130px;
+  font-style: italic;
+  color: #666;
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+}
+li {
+    float: left;
+    margin: 0 15px
+}
+/**
+ * Layout for menu
+ * "I gathered all style in the class navbar so it must be put together with the nav element." 
+ * http://dbwebb.se/kod-exempel/dynamic_php_menu/
+ * .nb-black
+ */
+.nb-black {
+	display block;/**/
+	list-style-type: none;
+	background-color:#333;
+	font-family:Verdana;
+	padding:0.5em 1.5em 1.7em 0.5em; // tjocklek svart bakgrund
+}
+.nb-black a {
+	background-color:#999;
+	color:#fff;
+	padding:0.2em;
+	text-decoration:none;
+}
+.nb-black a:hover {
+	background-color:#666;
+	padding:0.5em 0.2em 0.5em 0.2em;
+}
+.nb-black a.selected {
+	background-color:#fff;
+	padding:0.3em 0.2em 0.5em 0.2em;
+	color:#333;
+}
+/**
+ * Layout for navigation bar / menu
+ */
+/*#navbar {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}*/
+
+/**
+ * Layout for footer
+ */
+#footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.sitefooter {
+  color: #666;
+}

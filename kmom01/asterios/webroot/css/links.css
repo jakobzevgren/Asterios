@@ -1,0 +1,62 @@
+/**
+ * links.css
+ * reference: http://www.student.bth.se/~masb13/oophp/me/kmom01/source.php?path=css/links.css
+ *
+ */
+
+/** --------------------------------------------------------------
+ * Icons
+ *
+ */
+ul.icons {
+  margin: 0;
+  margin-bottom: 1.375em;
+  padding: 0;
+  list-style: none;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/** --------------------------------------------------------------
+ * Navbar: Plain style, nothing special
+ *
+ */
+ul.nb-plain {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.nb-plain li {
+  padding: 0 0 0 1em;
+  margin: 0;
+  display: inline;
+}
+
+ul.nb-plain li:first-child {
+  padding-left: 0;
+}
+
+ul.nb-plain li.selected a {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}    
+
+ul.nb-plain a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}  
+
+ul.nb-plain a:hover {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  text-decoration: none;
+}
