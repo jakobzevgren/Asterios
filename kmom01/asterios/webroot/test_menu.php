@@ -31,13 +31,16 @@ class CNavigation {
     return $html;
   }
 }; 
-echo "<link rel='stylesheet' type='text/css' href='stylesheet.css' />\n";
+echo "<link rel='stylesheet' type='text/css' href='css/stylesheet.css' />\n";
 echo CNavigation::GenerateMenu($menu, $class); 
 
  
  
  
-/* The simple solution
+/* 
+ * The simple solution
+ */
+ /*
 // array-variabel for navbar - config.php
 $menu = array(
   'home'  => array('text'=>'Home',  'url'=>'?p=home'),

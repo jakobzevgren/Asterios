@@ -15,13 +15,13 @@
     <div id='header'><?=$header?></div>
 	<div id='navbar'><?=get_navbar($menu)?></div>
 	
-
-    <div id='main'><?=$main?></div>
-	
-	<!-- Test av utskrift <div id='test'><?=$test?></div> -->
+    <div id='main'><?=$main?>
+	<?php if(isset($dump)):?><?=dump($_SERVER)?><?php endif; ?> <!-- dumper -->
+	</div>
     
 	<div id='footer'><?=$footer?></div>
   </div>
+
 
 <?php if(isset($jquery)):?><script src='<?=$jquery?>'></script><?php endif; ?>
 

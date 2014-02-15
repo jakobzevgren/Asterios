@@ -111,41 +111,14 @@ EOD;*/
 /**
  * Define the menu as an array
  */
-/*$asterios['navbar'] = $menu = array(
-  'class' => 'nb-plain',
-  'items' => array(
-    'home'  => array('text'=>'Home',   'url'=>'index.php',  'title' => 'Some title 1'),
-    'test'  => array('text'=>'Test',   'url'=>'test.php',   'title' => 'Some title 2'),
-    'test2' => array('text'=>'Test 2', 'url'=>'test2.php',  'title' => 'Some title 3'),
-  ),
-  'callback_selected' => function($url) {
-    if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {
-      return true;
-    }
-  }
-);
-$asterios['navbar'] = $menu = array(
-  'home'  => array('text'=>'Home',  'url'=>'?p=home'),
-  'away'  => array('text'=>'Away',  'url'=>'?p=away'),
-  'about' => array('text'=>'About', 'url'=>'?p=about'),
-);*/
-
-/*$asterios['navbar'] = array(
-  'callback' => 'modifyNavbar',
-  'class' => 'navbar',
-  'items' => array(
-    'home'  => array('text'=>'Home',  'url'=>'?p=home', 'class'=>null),
-    'away'  => array('text'=>'Away',  'url'=>'?p=away', 'class'=>null),
-    'about' => array('text'=>'About', 'url'=>'?p=about', 'class'=>null),
-  ),
-);*/
- 
 $asterios['menu'] = array( // also test 'class' => 'nb-plain'
   'class' => 'nb-black', // css-class för styleing, see webroot/css/style.css
   'items' => array(
     'hem'         => array('text'=>'Hem',         'url'=>'me.php',          'title' => 'Min presentation om mig själv'),
     'redovisning' => array('text'=>'Redovisning', 'url'=>'redovisning.php', 'title' => 'Redovisningar för kursmomenten'),
-    'kallkod'     => array('text'=>'Källkod',     'url'=>'source.php',      'title' => 'Se källkoden'),
+    'kallkod'     => array('text'=>'Källkod',     'url'=>'viewsource.php',      'title' => 'Se källkoden'),
+	'slideshow'     => array('text'=>'Javascript',     'url'=>'slideshow.php',      'title' => 'Javascript slideshow'),
+	'dice'     => array('text'=>'Dice med dump()',     'url'=>'dice.php',      'title' => 'Dice med dump()'),
   ),
   'callback_selected' => function($url) {
     if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {           

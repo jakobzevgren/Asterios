@@ -30,8 +30,6 @@ if($roll) {
   $html .= "<p>Totalt fick du " . $dice->GetTotal() . " poäng på dina kast.</p>";
 }
 
-
-
 // Do it and store it all in variables in the Asterios container.
 $asterios['title'] = "Kasta tärning";
 
@@ -41,6 +39,15 @@ $asterios['main'] = <<<EOD
 <p>Hur många kast vill du göra, <a href='?roll=1'>1 kast</a>, <a href='?roll=3'>3 kast</a> eller <a href='?roll=6'>6 kast</a>? </p>
 {$html}
 EOD;
+
+/**
+ * Activates dumping
+ * i config.php inkluderas src/bootstrap.php där "function dump($array)" ligger.
+ * ['dump'] är kopplad till isset i theme/index.tpl.php
+ */
+$asterios['dump'] = "Dumpa";
+// $asterios['dump'] = null; // sätt till null ger ingen dump-utskrift
+
 
 
 
